@@ -46,6 +46,7 @@ return(
 
 
             <View style={styles.bottom}>
+                <Text style={styles.buttonText}>Don't have an account?</Text>
             </View>   
 
 
