@@ -49,9 +49,48 @@ return(
                 <Text style={styles.buttonText}>Don't have an account?</Text>
             </View>   
 
+            <TouchableOpacity
+            onPress={()=>router.push("/(auth)/register")}>
+                <Text style={styles.signup}>Sign Up<Text/>
+            </TouchableOpacity>
+            </View>
+            </SafeAreaView>
+
 
             
 
 
-) 
+); 
 }
+
+const styles=StyleSheet.create({
+    container:{
+        flex:1,
+        padding:25,
+        justifyContent:"center",
+        backgroundColor:"#fff",
+
+    },
+    title:{
+        fontSize:34,
+        fontWeight:"700",
+        color:"#111",
+    },
+    subtitle:{
+        marginTop:10,
+        fontSize:17,
+        color:"#777",
+        marginBottom:40,
+
+    },
+    input:{
+        height:60,
+        borderWidth:1,
+        borderColor:"#E5E5E5",
+        borderRadius:18,
+        paddingHorizontal:18,
+        marginBottom:18,
+        fontSize:16,
+    }
+
+})
